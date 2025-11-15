@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Declaración de codificación y vista adaptable -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña del sitio -->
+    <title>Mi Portafolio - José Marcelo Burgos Moncayo</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO PRINCIPAL DEL SITIO -->
+    <header>
+        <!-- Nombre principal del portafolio -->
+        <h1>José Marcelo Burgos Moncayo</h1>
+
+        <!-- Pequeña descripción bajo el nombre -->
+        <p><em>Estudiante de Ingeniería en Sistemas | Apasionado por la tecnología</em></p>
+
+        <!-- Imagen personal con atributo alt obligatorio -->
+        <img src="img/img.jpg" alt="Foto de José Burgos" width="150">
+
+        <!-- Menú de navegación principal -->
+        <nav>
+            <ul>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#presentacion">Presentación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- SECCIÓN SOBRE MÍ DEL PORTAFOLIO -->
+    <section id="sobremi">
+        <h2>Sobre mí</h2>
+
+        <!-- Párrafo descriptivo con etiquetas semánticas -->
+        <p>
+            Me gusta la edición de video y la tecnología, domino el inglés y me encanta aprender y trabajar. <br>
+            Soy un <strong>estudiante</strong> entusiasta de <mark>Ingeniería en Sistemas</mark> con interés en <br>
+            el desarrollo de páginas web. <br>
+            <em>Me gusta emprender y desarrollar proyectos como estudiante</em>.
+        </p>
+    </section>
+
+
+    <!-- LISTA DE INTERESES PERSONALES -->
+    <section>
+        <h3>Mis intereses</h3>
+
+        <!-- Lista no ordenada con elementos básicos -->
+        <ul>
+            <li>Programación</li>
+            <li>Diseño web</li>
+            <li>Videojuegos</li>
+            <li>Inteligencia artificial</li>
+        </ul>
+    </section>
+
+
+    <!-- TABLA DE HABILIDADES REQUERIDA EN LA TAREA -->
+    <section id="habilidades">
+        <h2>Tabla de habilidades</h2>
+
+        <!-- Tabla con thead, tbody y tfoot -->
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Habilidades</th>
+                    <th>Nivel</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lenguaje Java</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>Desarrollo de HTML</td>
+                    <td>Básico</td>
+                </tr>
+                <tr>
+                    <td>Edición de video</td>
+                    <td>Básico</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <!-- Pie de la tabla con total -->
+                    <td>Total de habilidades</td>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+
+    <!-- SECCIÓN MULTIMEDIA CON AUDIO -->
+    <section id="presentacion">
+        <h2>Multimedia</h2>
+
+        <!-- Control de audio con fuente MP3 -->
+        <audio controls>
+            <source src="audiohtml/audio.mp3" type="audio/mp3">
+            Tu navegador no soporta audio.
+        </audio>
+    </section>
+
+
+    <!-- FORMULARIO DE CONTACTO REQUERIDO EN EL PROYECTO -->
+    <section id="contacto">
+        <h2>Formulario</h2>
+
+        <!-- Formulario básico con validaciones mínimas -->
+        <form>
+
+            <!-- Campo para el nombre -->
+            <label>Nombre:</label><br>
+            <input type="text" name="nombre" required><br><br>
+
+            <!-- Campo de correo con validación HTML5 -->
+            <label>Correo:</label><br>
+            <input type="email" name="correo" required><br><br>
+
+            <!-- Edad con tipo numérico -->
+            <label>Edad:</label><br>
+            <input type="number" name="edad" min="1" required><br><br>
+
+            <!-- Selección de género con radio buttons -->
+            <label>Género:</label><br>
+            <input type="radio" name="genero" value="F"> Femenino<br>
+            <input type="radio" name="genero" value="M"> Masculino<br>
+            <input type="radio" name="genero" value="O"> Otros<br><br>
+
+            <!-- Intereses seleccionables -->
+            <label>Intereses:</label><br>
+            <input type="checkbox" name="int1"> Programación Java<br>
+            <input type="checkbox" name="int3"> Desarrollar presentaciones<br>
+            <input type="checkbox" name="int4"> Desarrollo de HTML<br>
+            <input type="checkbox" name="int5"> Editar videos<br><br>
+
+            <!-- Área para comentarios -->
+            <label>Comentarios:</label><br>
+            <textarea name="comentarios" cols="40" rows="4"></textarea><br><br>
+
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+
+
+    <!-- PIE DE PÁGINA DEL SITIO -->
+    <footer>
+        <!-- Derechos de autor -->
+        <p>&copy; 2025 José Marcelo Burgos Moncayo | Todos los derechos reservados.</p>
+
+        <!-- Enlaces externos a redes -->
+        <p>
+            Sígueme en
+            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a> |
+            <a href="mailto:jb759422@gmail.com">Correo</a> |
+            <a href="https://www.instagram.com/marc.jose987" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/marcelo.burgos.914166" target="_blank">Facebook</a>
+        </p>
+    </footer>
+
+</body>
+</html>
