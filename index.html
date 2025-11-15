@@ -2,28 +2,32 @@
 <html lang="es">
 
 <head>
-    <!-- Declaración de codificación y vista adaptable -->
+    <!-- Configuración básica del documento:
+         - charset define la codificación (UTF-8 para caracteres especiales)
+         - viewport permite que la página sea adaptable en móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Título de la pestaña del sitio -->
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>Mi Portafolio - José Marcelo Burgos Moncayo</title>
 </head>
 
 <body>
 
-    <!-- ENCABEZADO PRINCIPAL DEL SITIO -->
+    <!-- ===========================
+            ENCABEZADO PRINCIPAL
+         =========================== -->
     <header>
-        <!-- Nombre principal del portafolio -->
+        <!-- Nombre destacado del portafolio -->
         <h1>José Marcelo Burgos Moncayo</h1>
 
-        <!-- Pequeña descripción bajo el nombre -->
+        <!-- Subtítulo o descripción del autor -->
         <p><em>Estudiante de Ingeniería en Sistemas | Apasionado por la tecnología</em></p>
 
-        <!-- Imagen personal con atributo alt obligatorio -->
+        <!-- Imagen del usuario con descripción (alt) obligatoria -->
         <img src="img/img.jpg" alt="Foto de José Burgos" width="150">
 
-        <!-- Menú de navegación principal -->
+        <!-- Menú de navegación que permite ir a cada sección -->
         <nav>
             <ul>
                 <li><a href="#sobremi">Sobre mí</a></li>
@@ -35,134 +39,159 @@
     </header>
 
 
-    <!-- SECCIÓN SOBRE MÍ DEL PORTAFOLIO -->
-    <section id="sobremi">
-        <h2>Sobre mí</h2>
+    <!-- =================================
+              CONTENIDO PRINCIPAL DEL SITIO
+         ================================= -->
+    <main>
 
-        <!-- Párrafo descriptivo con etiquetas semánticas -->
-        <p>
-            Me gusta la edición de video y la tecnología, domino el inglés y me encanta aprender y trabajar. <br>
-            Soy un <strong>estudiante</strong> entusiasta de <mark>Ingeniería en Sistemas</mark> con interés en <br>
-            el desarrollo de páginas web. <br>
-            <em>Me gusta emprender y desarrollar proyectos como estudiante</em>.
-        </p>
-    </section>
+        <!-- ===========================
+               SECCIÓN SOBRE MÍ
+           =========================== -->
+        <section id="sobremi">
+            <h2>Sobre mí</h2>
 
-
-    <!-- LISTA DE INTERESES PERSONALES -->
-    <section>
-        <h3>Mis intereses</h3>
-
-        <!-- Lista no ordenada con elementos básicos -->
-        <ul>
-            <li>Programación</li>
-            <li>Diseño web</li>
-            <li>Videojuegos</li>
-            <li>Inteligencia artificial</li>
-        </ul>
-    </section>
+            <!-- Párrafo con marcado semántico (strong, em, mark) -->
+            <p>
+                Me gusta la edición de video y la tecnología, domino el inglés y me encanta aprender y trabajar. <br>
+                Soy un <strong>estudiante</strong> entusiasta de <mark>Ingeniería en Sistemas</mark> con interés en <br>
+                el desarrollo de páginas web. <br>
+                <em>Me gusta emprender y desarrollar proyectos como estudiante</em>.
+            </p>
+        </section>
 
 
-    <!-- TABLA DE HABILIDADES REQUERIDA EN LA TAREA -->
-    <section id="habilidades">
-        <h2>Tabla de habilidades</h2>
+        <!-- ===========================
+               SECCIÓN DE INTERESES
+           =========================== -->
+        <section>
+            <h3>Mis intereses</h3>
 
-        <!-- Tabla con thead, tbody y tfoot -->
-        <table border="3">
-            <thead>
-                <tr>
-                    <th>Habilidades</th>
-                    <th>Nivel</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Lenguaje Java</td>
-                    <td>Intermedio</td>
-                </tr>
-                <tr>
-                    <td>Desarrollo de HTML</td>
-                    <td>Básico</td>
-                </tr>
-                <tr>
-                    <td>Edición de video</td>
-                    <td>Básico</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <!-- Pie de la tabla con total -->
-                    <td>Total de habilidades</td>
-                    <td>3</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
+            <!-- Lista no ordenada con intereses personales -->
+            <ul>
+                <li>Programación</li>
+                <li>Diseño web</li>
+                <li>Videojuegos</li>
+                <li>Inteligencia artificial</li>
+            </ul>
+        </section>
 
 
-    <!-- SECCIÓN MULTIMEDIA CON AUDIO -->
-    <section id="presentacion">
-        <h2>Multimedia</h2>
+        <!-- ===========================
+               TABLA DE HABILIDADES
+           =========================== -->
+        <section id="habilidades">
+            <h2>Tabla de habilidades</h2>
 
-        <!-- Control de audio con fuente MP3 -->
-        <audio controls>
-            <source src="audiohtml/audio.mp3" type="audio/mp3">
-            Tu navegador no soporta audio.
-        </audio>
-    </section>
+            <!-- Tabla estructurada con thead, tbody y tfoot -->
+            <table border="3">
 
+                <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Habilidades</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
 
-    <!-- FORMULARIO DE CONTACTO REQUERIDO EN EL PROYECTO -->
-    <section id="contacto">
-        <h2>Formulario</h2>
+                <!-- Cuerpo de la tabla -->
+                <tbody>
+                    <tr>
+                        <td>Lenguaje Java</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo de HTML</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Edición de video</td>
+                        <td>Básico</td>
+                    </tr>
+                </tbody>
 
-        <!-- Formulario básico con validaciones mínimas -->
-        <form>
+                <!-- Pie de la tabla -->
+                <tfoot>
+                    <tr>
+                        <!-- Total de habilidades listadas -->
+                        <td>Total de habilidades</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
 
-            <!-- Campo para el nombre -->
-            <label>Nombre:</label><br>
-            <input type="text" name="nombre" required><br><br>
-
-            <!-- Campo de correo con validación HTML5 -->
-            <label>Correo:</label><br>
-            <input type="email" name="correo" required><br><br>
-
-            <!-- Edad con tipo numérico -->
-            <label>Edad:</label><br>
-            <input type="number" name="edad" min="1" required><br><br>
-
-            <!-- Selección de género con radio buttons -->
-            <label>Género:</label><br>
-            <input type="radio" name="genero" value="F"> Femenino<br>
-            <input type="radio" name="genero" value="M"> Masculino<br>
-            <input type="radio" name="genero" value="O"> Otros<br><br>
-
-            <!-- Intereses seleccionables -->
-            <label>Intereses:</label><br>
-            <input type="checkbox" name="int1"> Programación Java<br>
-            <input type="checkbox" name="int3"> Desarrollar presentaciones<br>
-            <input type="checkbox" name="int4"> Desarrollo de HTML<br>
-            <input type="checkbox" name="int5"> Editar videos<br><br>
-
-            <!-- Área para comentarios -->
-            <label>Comentarios:</label><br>
-            <textarea name="comentarios" cols="40" rows="4"></textarea><br><br>
-
-            <!-- Botón de envío -->
-            <input type="submit" value="Enviar">
-
-        </form>
-    </section>
+            </table>
+        </section>
 
 
-    <!-- PIE DE PÁGINA DEL SITIO -->
+        <!-- ===========================
+               SECCIÓN MULTIMEDIA
+           =========================== -->
+        <section id="presentacion">
+            <h2>Multimedia</h2>
+
+            <!-- Reproductor de audio con controles -->
+            <audio controls>
+                <source src="audiohtml/audio.mp3" type="audio/mp3">
+                <!-- Texto alternativo si el navegador no soporta audio -->
+                Tu navegador no soporta audio.
+            </audio>
+        </section>
+
+
+        <!-- ===========================
+              FORMULARIO DE CONTACTO
+           =========================== -->
+        <section id="contacto">
+            <h2>Formulario</h2>
+
+            <!-- Formulario básico con campos obligatorios -->
+            <form>
+
+                <!-- Campo para el nombre del usuario -->
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre" required><br><br>
+
+                <!-- Campo de correo electrónico -->
+                <label>Correo:</label><br>
+                <input type="email" name="correo" required><br><br>
+
+                <!-- Campo numérico para la edad -->
+                <label>Edad:</label><br>
+                <input type="number" name="edad" min="1" required><br><br>
+
+                <!-- Radios para seleccionar género -->
+                <label>Género:</label><br>
+                <input type="radio" name="genero" value="F"> Femenino<br>
+                <input type="radio" name="genero" value="M"> Masculino<br>
+                <input type="radio" name="genero" value="O"> Otros<br><br>
+
+                <!-- Lista de intereses seleccionables -->
+                <label>Intereses:</label><br>
+                <input type="checkbox" name="int1"> Programación Java<br>
+                <input type="checkbox" name="int3"> Desarrollar presentaciones<br>
+                <input type="checkbox" name="int4"> Desarrollo de HTML<br>
+                <input type="checkbox" name="int5"> Editar videos<br><br>
+
+                <!-- Área de comentarios adicionales -->
+                <label>Comentarios:</label><br>
+                <textarea name="comentarios" cols="40" rows="4"></textarea><br><br>
+
+                <!-- Botón que envía el formulario -->
+                <input type="submit" value="Enviar">
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- ===========================
+               PIE DE PÁGINA
+         =========================== -->
     <footer>
-        <!-- Derechos de autor -->
+        <!-- Derechos reservados -->
         <p>&copy; 2025 José Marcelo Burgos Moncayo | Todos los derechos reservados.</p>
 
-        <!-- Enlaces externos a redes -->
+        <!-- Enlaces externos -->
         <p>
             Sígueme en
             <a href="https://github.com/tu-usuario" target="_blank">GitHub</a> |
